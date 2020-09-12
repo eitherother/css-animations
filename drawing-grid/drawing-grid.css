@@ -1,0 +1,46 @@
+.grid {
+    background: linear-gradient(45deg, #b11b1b, #cccccc);
+    border-radius:2%;
+    align-content: baseline;
+    display: flex;
+    font-size:16px;
+    flex-wrap: wrap;
+    height: 192px;
+    margin:auto;
+    width:192px;
+    perspective: 24em;
+    perspective-origin: 16em;
+}
+
+.panel {
+    flex: none;
+    height: 8px;
+    position: relative;
+    transition: transform 3s;
+    transform: rotateY(45deg);
+    transform-style: preserve-3d;
+    width: 8px;
+}
+
+.face {
+    position: absolute;
+    border-radius:30%;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: midnightblue;
+}
+
+.back {
+    background-color: #e66a40;
+    transform: rotateY(180deg);
+}
+
+.panel:hover {
+    transform: rotateY(320deg);
+    transition: transform 0s;
+
+}
