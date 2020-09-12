@@ -1,3 +1,3 @@
 # css-animations
 
-CSS animations including a computer keyboard, a player piano, audio sound bars, and a broadcasting antenna.
+CSS animations including a computer keyboard, a player piano, audio sound bars, a broadcasting antenna, and a waiting indicator.

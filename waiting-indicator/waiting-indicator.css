@@ -1,0 +1,80 @@
+.circle-wrapper {
+  display: flex;
+  height:64px;
+  margin: auto;
+  position: relative;
+  width: 64px;
+}
+
+.circle-1 {
+  animation: circle-1-rotate 4s alternate infinite;
+  background: transparent;
+  border-bottom: solid 2px #af238a;
+  border-left: solid 2px #af238a;
+  border-radius: 50%;
+  height: 64px;
+  position: absolute;
+  width: 64px;
+}
+
+@keyframes circle-1-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(480deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+
+.circle-2 {
+  animation: circle-2-rotate 4s alternate infinite;
+  background: transparent;
+  border-right: solid 2px #123456;
+  border-top: solid 2px #123456;
+  border-radius: 50%;
+  height: 48px;
+  left: 8px;
+  position: absolute;
+  top: 8px;
+  width: 48px;
+}
+
+@keyframes circle-2-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-300deg);
+  }
+  100% {
+    transform: rotate(-100deg);
+  }
+}
+
+.circle-3 {
+  animation: circle-3-rotate 3s alternate infinite;
+  background: transparent;
+  border-bottom: solid 2px #48c38c;
+  border-left: solid 2px #48c38c;
+  border-radius: 50%;
+  height: 32px;
+  left: 16px;
+  position: absolute;
+  top: 16px;
+  width: 32px;
+}
+
+@keyframes circle-3-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(320deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
